@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="originalDataJs.css" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+
+  <body>
+    <div class="target" data-progress="10" data-create-date="2013-04-10">
+      <div class="box"></div>
+      <div class="box-data"></div>
+    </div>
+    <br>
+    <div class="target" data-progress="40" data-create-date="2013-04-10">
+      <div class="box"></div>
+      <div class="box-data"></div>
+    </div>
+    <br>
+    <div class="target" data-progress="20" data-create-date="2013-04-10">
+      <div class="box"></div>
+      <div class="box-data"></div>
+    </div>
+    <br>
+    <div class="target" data-progress="80" data-create-date="2013-04-10">
+      <div class="box"></div>
+      <div class="box-data"></div>
+    </div>
+    <br>
+    <div class="target" data-progress="75" data-create-date="2013-04-10">
+      <div class="box"></div>
+      <div class="box-data"></div>
+    </div>
+    <br>
+    <div class="target" data-progress="30" data-create-date="2013-04-10">
+      <div class="box"></div>
+      <div class="box-data"></div>
+    </div>
+    <br>
+    <div class="target" data-progress="100" data-create-date="2013-04-10">
+      <div class="box"></div>
+      <div class="box-data"></div>
+    </div>
+    <script>
+      var target = $('.target').get(0); //document.getElementById("blog");
+      $('.target').each(function(){
+        var el = $(this);
+        var box = el.find('.box-data');
+        box.css({
+          'width' : el.data('progress') + '%'
+        });
+      });
+    </script>
+  </body>
+</html>

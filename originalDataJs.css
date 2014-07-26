@@ -1,0 +1,17 @@
+.target{
+  position: relative;
+  height: 50px;
+  width: 200px;
+}
+.target > .box{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #666;
+}
+.target > .box-data{
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  background-color: midnightblue;
+}
